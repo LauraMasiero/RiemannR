@@ -1,11 +1,9 @@
 Package: RiemannR
-Type: Package
-Title: What the Package Does (Title Case)
+Type: R Package
+Title: RiemannR - BCI analysis with Riemannian geometry
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Laura Masiero
+Maintainer: Laura Masiero <laura.masiero.10@gmail.com>
+Description: This Package allows the use of Riemannian geometry to analyze BCI data.
 Encoding: UTF-8
 LazyData: true
