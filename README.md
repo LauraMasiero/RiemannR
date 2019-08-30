@@ -1,4 +1,4 @@
-RiemannR
+#RiemannR
 EEG-based BCI analysis with Riemannian geometry.
 
 This R package contains useful functions for the analysi of data from eeg-based brai-computer interfaces.
