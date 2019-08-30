@@ -1,6 +1,6 @@
 Package: RiemannR
 Type: R Package
-Title: RiemannR - BCI analysis with Riemannian geometry
+Title: RiemannR - EEG-based BCI analysis with Riemannian geometry
 Version: 0.1.0
 Author: Laura Masiero
 Maintainer: Laura Masiero <laura.masiero.10@gmail.com>
