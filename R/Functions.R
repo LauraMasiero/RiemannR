@@ -7,29 +7,29 @@ SCM<- function(matrix){
 }
 
 #####SUPER TRIAL#####
-SuperTrial <- function(list, n=16, length_epochs=dim(list[[i]]$epochs)[3], tidy=F, col=17){ 
+SuperTrial <- function(list, n=16, length_epochs=dim(list[[i]]$epochs)[3], tidy=F, col=17){
   P <- length(list)
   mean_epoch <- matrix(NA, n, length_epochs)
   super_trial <- list()
   scm_st <- list()
-  if(tidy=F){
-  for(i in 1:P){
-    new_trials <- list()
-    indices<- which(list[[i]]$labels==1, arr.ind = T)
-    epochs <- list[[i]]$epochs[indices[,2], -col ,]
-    N <- sum(list[[i]]$labels) 
-    for(c in 1:n){
-      for(j in 1:129){
-        mean_epoch[c,j] <- sum(epochs[,c,j])/N
+  if(tidy==F){
+    for(i in 1:P){
+      new_trials <- list()
+      indices<- which(list[[i]]$labels==1, arr.ind = T)
+      epochs <- list[[i]]$epochs[indices[,2], -col ,]
+      N <- sum(list[[i]]$labels)
+      for(c in 1:n){
+        for(j in 1:129){
+          mean_epoch[c,j] <- sum(epochs[,c,j])/N
+        }
+      }
+      for(t in 1:dim(list[[i]]$epochs)[1]){
+        new_trials[[t]] <- rbind(mean_epoch,list[[i]]$epochs[t,-col,] )
+        super_trial[[i]]<- new_trials
       }
     }
-    for(t in 1:dim(list[[i]]$epochs)[1]){
-      new_trials[[t]] <- rbind(mean_epoch,list[[i]]$epochs[t,-col,] ) 
-      super_trial[[i]]<- new_trials
-    }
   }
-  }
-  if(tidy=T){
+  else{
     for(i in 1:P){
       new_trials <- list()
       indices<- which(list[[i]]$labels==1, arr.ind = T)
@@ -41,7 +41,7 @@ SuperTrial <- function(list, n=16, length_epochs=dim(list[[i]]$epochs)[3], tidy=
         }
       }
       for(t in 1:dim(list[[i]]$epochs)[1]){
-        new_trials[[t]] <- rbind(mean_epoch,list[[i]]$epochs[t,,] ) 
+        new_trials[[t]] <- rbind(mean_epoch,list[[i]]$epochs[t,,] )
         super_trial[[i]]<- new_trials
       }
     }
@@ -85,7 +85,7 @@ exp_map <- function(mapped_values, C){
   C_2star <- Matpow(C, -0.5,1)
   orig_space_values <- list()
   for(i in 1:length(mapped_values))
-  orig_space_values[[i]] <- C_star%*%expm(C_2star%*%mapped_values[[i]]%*%C_2star)%*%C_star
+    orig_space_values[[i]] <- C_star%*%expm(C_2star%*%mapped_values[[i]]%*%C_2star)%*%C_star
   return(orig_space_values)
 }
 
@@ -172,7 +172,7 @@ zeta_est <- function(eta,n_channels,R){
   res <- omegap*mean(temp)
   res <- res*(2*pi)^(n_channels/2)*(det(Sigma))^(1/2)
   return(res)
-  }
+}
 
 #####RIEMANN-GAUSS DISTRIBUTION#####
 
@@ -199,27 +199,27 @@ LR_classification <- function(mu, sigma, scm_list){
 createAllSCM <- function(list, n=8, st=T, tidy=F, col=17) {
   tmp <- list()
   final_list <- list()
-  if(tidy=F){
-  if(st==T){
-    for(j in 1:n){
-      tmp <- list()
-      for(i in 1:length(list$super_trial[[j]])){
-        tmp[[i]] <- SCM(list$super_trial[[j]][[i]])
-        final_list[[j]] <- tmp
+  if(tidy==F){
+    if(st==T){
+      for(j in 1:n){
+        tmp <- list()
+        for(i in 1:length(list$super_trial[[j]])){
+          tmp[[i]] <- SCM(list$super_trial[[j]][[i]])
+          final_list[[j]] <- tmp
+        }
+      }
+    }
+    else{
+      for(j in 1:n){
+        tmp <- list()
+        for(i in 1:dim(list[[j]]$epochs)[1]){
+          tmp[[i]] <- SCM(list[[j]]$epochs[i,-col,])
+          final_list[[j]] <- tmp
+        }
       }
     }
   }
   else{
-    for(j in 1:n){
-      tmp <- list()
-      for(i in 1:dim(list[[j]]$epochs)[1]){
-        tmp[[i]] <- SCM(list[[j]]$epochs[i,-col,])
-        final_list[[j]] <- tmp
-      }
-    }
-  }
-  }
-  if(tidy=T){
     if(st==T){
       for(j in 1:n){
         tmp <- list()
