@@ -12,10 +12,10 @@ This is the first version of the package and it is under development.
 
 ## References
 
-Congedo M, Goyat M, Tarrin N, Ionescu G, Rivet B,Varnet L, Rivet B, Phlypo R, Jrad N, Acquadro M, Jutten C (2011) “Brain Invaders”: a prototype of an open-source P300-based video game working with the OpenViBE platform. Proc. IBCI Conf., Graz, Austria, 280-283. (hal.archives-ouvertes.fr/hal-00641412/document)
+Congedo M, Goyat M, Tarrin N, Ionescu G, Rivet B,Varnet L, Rivet B, Phlypo R, Jrad N, Acquadro M, Jutten C (2011) “Brain Invaders”: a prototype of an open-source P300-based video game working with the OpenViBE platform. Proc. IBCI Conf., Graz, Austria, 280-283. (https://hal.archives-ouvertes.fr/hal-00641412/document)
 
-Barachant A, Bonnet S, Congedo M, Jutten C (2013) Classification of covariance matrices using a Riemannian-based kernel for BCI applications. Neurocomputing 112, 172-178. (hal.archives-ouvertes.fr/hal-00820475/document)
+Barachant A, Bonnet S, Congedo M, Jutten C (2013) Classification of covariance matrices using a Riemannian-based kernel for BCI applications. Neurocomputing 112, 172-178. (https://hal.archives-ouvertes.fr/hal-00820475/document)
 
-Barachant A, Bonnet S, Congedo M, Jutten C (2012) Multi-Class Brain Computer Interface Classification by Riemannian Geometry. IEEE Transactions on Biomedical Engineering 59(4), 920-928. (hal.archives-ouvertes.fr/hal-00681328/document)
+Barachant A, Bonnet S, Congedo M, Jutten C (2012) Multi-Class Brain Computer Interface Classification by Riemannian Geometry. IEEE Transactions on Biomedical Engineering 59(4), 920-928. (https://hal.archives-ouvertes.fr/hal-00681328/document)
 
 Barachant A, Congedo M (2014) A Plug & Play P300 BCI using Information Geometry, arXiv:1409.0107. (https://arxiv.org/pdf/1409.0107.pdf)
