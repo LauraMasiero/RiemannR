@@ -23,15 +23,14 @@ SuperTrial(list, n=16, length_epochs=dim(list[[i]]$epochs)[3], tidy=F, col=17)
 
 \details{The initial list must have a specific construction: every list element has to be a list itself with two main elements, \code{$epochs} and \code{$labels}.
 \code{$epochs} contains tensors with dimensions \code{[n,c,t]}, where n are the number of epochs, c are the number of channels and t is the recording (epoch) length.
-\code{$labels} contains the class of the epochs considered (i.e. target or non target).
+\code{$labels} contains the class of the epochs considered (i.e. target or non target).} 
 
-}
 \value{
 It returns a list:
  \item{mean_epoch}{a matrix that is the signal mean of every channel considered.}
  \item{super_trial}{a list with the super trials constructed from the initial list.}
-%% ...
-}
+} 
+
 \references{
 Barachant, Alexandre e Marco Congedo (2014). “A Plug&Play P300 BCI Using Information Geometry”. url: http://arxiv.org/abs/1409.0107.
 }
