@@ -19,7 +19,7 @@ createAllSCM(list, n=8, st=T, tidy=FALSE, col=17)
 \item{tidy}{option to remove specific channels. If \code{tidy=TRUE} no channels will be removed to construct the Super trial, if \code{tidy=FALSE} then the columns of the channels to be removed have to be specified with the option \code{col}. }
 \item{col}{columns to be removed (when \code{tidy=FALSE}).}
 }
-}
+
 
 \details{The initial list must have a specific construction: every list element has to be a list itself with two main elements, \code{$epochs} and \code{$labels}.
 \code{$epochs} contains tensors with dimensions \code{[n,c,t]}, where n are the number of epochs, c are the number of channels and t is the recording (epoch) length.
