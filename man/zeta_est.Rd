@@ -13,9 +13,8 @@ zeta_est(eta,n_channels,R)
 
 \arguments{
   \item{eta}{a vector of numeric values (or a single real value) used to initialize the simulation. \code{eta=-1/2*sigma^2}}
-}
-\item{n_channels}{a real number indicating the number of channels used in the EEG recordings.}
-\item{R}{Number of simulations.}
+  \item{n_channels}{a real number indicating the number of channels used in the EEG recordings.}
+  \item{R}{Number of simulations.}
 }
 
 \value{
