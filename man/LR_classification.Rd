@@ -32,6 +32,6 @@ Laura Masiero, email: laura.masiero.10@gmail.com
 \seealso{
 \code{\link{RG_distr}
 }
-
+}
 \keyword{ ~LR }
 \keyword{ ~classification }
