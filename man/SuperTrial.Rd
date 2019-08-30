@@ -8,24 +8,22 @@ Super Trial
 This function creates a super trial (Barachant and Congedo, 2014) to use in ERP signal analysis for BCI.
 }
 \usage{
-SuperTrial(list, n=16, length_epochs=dim(list[[i]]$epochs)[3], tidy=F)
+SuperTrial(list, n=16, length_epochs=dim(list[[i]]$epochs)[3], tidy=F, col=17)
 }
 
 \arguments{
-  \item{list}{
-a list of matrices with a specific construction. See Details below.
+  \item{list}{a list of matrices with a specific construction. See Details below.
 }
 \item{n}{number of channels used to record the EEG signal.}
 \item{length_epochs}{number of time points of the registered signal (its length).}
-\item{tidy}{option to remove specific channels. If tidy=TRUE no channels will be removed to construct the Super trial, if tidy=FALSE then the columns of the channels to be removed have to be specified with the option col. }
-\item{col}{columns to be removed (when tidy=FALSE).}
+\item{tidy}{option to remove specific channels. If \code{tidy=TRUE} no channels will be removed to construct the Super trial, if \code{tidy=FALSE} then the columns of the channels to be removed have to be specified with the option \code{col}. }
+\item{col}{columns to be removed (when \code{tidy=FALSE}).}
 }
 
-$epochs che contiene le epochs provenienti da ogni canale
 
-\details{The initial list must have a specific construction: every list element has to be a list itself with two main elements, $epochs and $labels.
-$epochs contains tensors with dimensions [n,c,t], where n are the number of epochs, c are the number of channels and t is the recording (epoch) length.
-$labels contains the class of the epochs considered (i.e. target or non target).
+\details{The initial list must have a specific construction: every list element has to be a list itself with two main elements, \code{$epochs} and \code{$labels}.
+\code{$epochs} contains tensors with dimensions \code{[n,c,t]}, where n are the number of epochs, c are the number of channels and t is the recording (epoch) length.
+\code{$labels} contains the class of the epochs considered (i.e. target or non target).
 
 }
 \value{
