@@ -1,5 +1,5 @@
-\name{RaoDist2}
-\alias{RaoDist2}
+\name{RaoDist}
+\alias{RaoDist}
 
 \title{
 Riemannian Distance
