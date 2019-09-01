@@ -1,11 +1,11 @@
-\name{RaoDist}
-\alias{RaoDist}
-%- Also NEED an '\alias' for EACH other topic documented here.
+\name{RaoDist2}
+\alias{RaoDist2}
+
 \title{
 Riemannian Distance
 }
 \description{
-This function computes the Riemannian distance between two matrices with the Rao-Fisher metric.
+This function computes the square Riemannian distance between two matrices with the Rao-Fisher metric.
 }
 \usage{
 RaoDist(m1,m2)
@@ -16,10 +16,10 @@ RaoDist(m1,m2)
 }
 }
 \details{
-The distance is computed with the use of the spectral deccomposition.
+The distance is computed with the use of the spectral decomposition.
 }
 \value{
-It returns a numeric value, the distance.
+It returns a numeric value, the square Riemannian distance.
 }
 \references{
 Moakher, Maher (2005). "A differential geometric approach to the geometric mean of symmetric positive-definite matrices". In: SIAM Journal on Matrix Analysis and Applications 26.3, pp. 735–747. doi: 10.1137/S0895479803436937.
