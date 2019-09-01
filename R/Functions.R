@@ -52,7 +52,7 @@ SuperTrial <- function(list, n=16, length_epochs=dim(list[[i]]$epochs)[3], tidy=
 
 ##### RIEMANNIAN DISTANCE#####
 
-RaoDist <- function(matrix1, matrix2){
+RaoDist2 <- function(matrix1, matrix2){
   (sum(log(eigen(solve(matrix1)%*%matrix2)$values)^2))
 }
 
