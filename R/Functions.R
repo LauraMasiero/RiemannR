@@ -34,7 +34,7 @@ SuperTrial <- function(list, n=16, length_epochs=dim(list[[i]]$epochs)[3], tidy=
       new_trials <- list()
       indices<- which(list[[i]]$labels==1, arr.ind = T)
       epochs <- list[[i]]$epochs[indices[,2], ,]
-      N <- sum(list[[i]]$labels) #dovrebbe essere sempre 80
+      N <- sum(list[[i]]$labels) 
       for(c in 1:n){
         for(j in 1:129){
           mean_epoch[c,j] <- sum(epochs[,c,j])/N
@@ -52,7 +52,7 @@ SuperTrial <- function(list, n=16, length_epochs=dim(list[[i]]$epochs)[3], tidy=
 
 ##### RIEMANNIAN DISTANCE#####
 
-RaoDist2 <- function(matrix1, matrix2){
+RaoDist <- function(matrix1, matrix2){
   (sum(log(eigen(solve(matrix1)%*%matrix2)$values)^2))
 }
 
