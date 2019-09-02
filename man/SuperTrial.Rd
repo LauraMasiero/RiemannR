@@ -8,7 +8,7 @@ Super Trial
 This function creates a super trial (Barachant and Congedo, 2014) to use in ERP signal analysis for BCI.
 }
 \usage{
-SuperTrial(list, n=16, length_epochs=dim(list[[i]]$epochs)[3], tidy=F, col=17)
+SuperTrial(list, n=16, length_epochs=129, tidy=F, col=17)
 }
 
 \arguments{
