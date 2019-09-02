@@ -78,6 +78,7 @@ log_map <- function(scm_list, C){
 }
 
 #####EXPONENTIAL MAPPING#####
+exp_map <- function(mapped_values, C){
   require(powerplus)
   require(expm)
   C_star <- Matpow(C, 0.5,1)
