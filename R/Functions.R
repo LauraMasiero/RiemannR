@@ -7,7 +7,7 @@ SCM<- function(matrix){
 }
 
 #####SUPER TRIAL#####
-SuperTrial <- function(list, n=16, length_epochs=dim(list[[i]]$epochs)[3], tidy=F, col=17){
+SuperTrial <- function(list, n=16, length_epochs=129, tidy=F, col=17){
   P <- length(list)
   mean_epoch <- matrix(NA, n, length_epochs)
   super_trial <- list()
