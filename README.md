@@ -19,3 +19,10 @@ Barachant A, Bonnet S, Congedo M, Jutten C (2013) Classification of covariance m
 Barachant A, Bonnet S, Congedo M, Jutten C (2012) Multi-Class Brain Computer Interface Classification by Riemannian Geometry. IEEE Transactions on Biomedical Engineering 59(4), 920-928. (https://hal.archives-ouvertes.fr/hal-00681328/document)
 
 Barachant A, Congedo M (2014) A Plug & Play P300 BCI using Information Geometry, arXiv:1409.0107. (https://arxiv.org/pdf/1409.0107.pdf)
+
+## Installation
+
+For the package installation is required the package \code{devtools}.
+Example: 
+\code{library(devtools)}
+\code{install_github("LauraMasiero/RiemannR")}
