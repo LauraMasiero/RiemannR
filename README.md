@@ -25,6 +25,7 @@ Barachant A, Congedo M (2014) A Plug & Play P300 BCI using Information Geometry,
 For the package installation the "devtools" package is required.
 
 Example: 
+
 library(devtools)
 
 install_github("LauraMasiero/RiemannR")
