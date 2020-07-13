@@ -26,5 +26,6 @@ For the package installation the "devtools" package is required.
 
 Example: 
 library(devtools)
+
 install_github("LauraMasiero/RiemannR")
 
