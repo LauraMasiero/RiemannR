@@ -2,7 +2,7 @@
 
 ### EEG-based BCI analysis with Riemannian geometry.
 
-This R package contains useful functions for the analysis of data from eeg-based brain-computer interfaces.
+This R package contains useful functions to analyse data from eeg-based brain-computer interfaces.
 In particular, it has been developed for the analysis of "Brain Invaders" data, which can be find here: https://zenodo.org/record/1494240#.XWjtji9aaRv.
 
 There are also simple Python scripts to work with the dataset at https://github.com/plcrodrigues/BrainInvaders-2013a-Dataset.
@@ -22,7 +22,7 @@ Barachant A, Congedo M (2014) A Plug & Play P300 BCI using Information Geometry,
 
 ## Installation
 
-For the package installation the "devtools" package is required.
+The package installation requires the "devtools" package.
 
 Example: 
 
