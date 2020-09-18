@@ -1,1 +1,0 @@
-RG_distr <- function(mu,sigma, p, scm_matrix) zeta_est(eta(sigma),p,10000)^(-1)*exp(-RaoDist(scm_matrix,mu)/(2*sigma^2))
